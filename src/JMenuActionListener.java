@@ -53,7 +53,7 @@ public class JMenuActionListener implements ActionListener {
                         ((ScheduleTableModel)
                                 table.getModel()).updateList(schedule);
                         if(!radioObjects.getGui().getIsTableVisible()) {
-                            radioObjects.getGui().tableShow();
+                            radioObjects.getGui().tableShow(1);
                         }
                         for (int j = 0; j < schedule.size(); j++) {
                             if (schedule.get(j) instanceof Schedule) {
@@ -65,7 +65,7 @@ public class JMenuActionListener implements ActionListener {
                             }
                         }
                     }else{
-                        radioObjects.getGui().tableHide();
+                        radioObjects.getGui().tableHide(1);
                     }
                 }
             }

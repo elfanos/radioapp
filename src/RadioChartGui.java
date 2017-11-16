@@ -33,6 +33,7 @@ public class RadioChartGui {
     private ErrorDialog dlg = null;
     private JPanel middlePanel;
     private JPanel middlePanelNoTable;
+    private JPanel middlePanelLoading;
     private JPanel jtablePanel;
     private boolean isTableVisible;
     private JScrollPane tableScroller;
@@ -49,29 +50,26 @@ public class RadioChartGui {
         this.radioObjects = radioObjects;
         this.radioObjects.setGui(this);
         setFirstElement(true);
+
+        middlePanel = buildMiddlePanel();
+        middlePanelNoTable =
+                this.createMiddlePanelNoTable("noschedule");
+        middlePanelLoading = this.createMiddlePanelNoTable("loading");
         dlg = new ErrorDialog(frame, "ERROR",
                 "No internet connection cant update schedule");
         frame = new JFrame(title);
+
         table = new ScheduleTable(this.radioObjects, this);
         table.setRowHeight(100);
+
         table.setDefaultRenderer(BufferedImage.class,
                 new BufferedImageCellRenderer());
         table.getSelectionModel().
                addListSelectionListener(new JTableClickListener());
         table.setDefaultRenderer(Schedule.class,
                 new ScheduleTimeBackgroundRender());
-        menu = new Menu(this, frame, radioObjects, table);
-        menu.startMenu();
 
-        //Set a scroller for the menu since its a lot of channels
-        //The solution is crafted by daryll and I used his
-        //api for fixing my scroller.
-        MenuScroller.setScrollerFor(menu,8,125,3,1);
-
-        middlePanel = buildMiddlePanel();
-        middlePanelNoTable = this.createMiddlePanelNoTable();
         tableScroller = new JScrollPane(table);
-
         middlePanel.add(tableScroller);
        // middlePanel.add(middlePanelNoTable,BorderLayout.CENTER);
         JPanel lowerPanel  = lowerPanel();
@@ -80,6 +78,8 @@ public class RadioChartGui {
         frame.setBackground(Color.decode("#2D3142"));
         frame.pack();
         frame.setSize(600, 600);
+        this.tableHide(0);
+        (new SWTableUpdate()).execute();
 
     }
     /**
@@ -405,6 +405,20 @@ public class RadioChartGui {
     }
 
     /**
+     * Initialize menus that show all the
+     * channels available in the radio application
+     * Using a darylls menu scroller api though a lot
+     * of channels is gathered from the radio api.
+     * */
+    private void initializeMenu(){
+        menu = new Menu(this, frame, radioObjects, table);
+        menu.startMenu();
+        //Set a scroller for the menu since its a lot of channels
+        //The solution is crafted by daryll and I used his
+        //api for fixing my scroller.
+        MenuScroller.setScrollerFor(menu,8,125,3,1);
+    }
+    /**
      * Cast a error dialog as an
      * java JDialog.
      * */
@@ -417,17 +431,28 @@ public class RadioChartGui {
             dlg.setDialog();
         }
     }
+
     /**
      * Remove a component from the middlePanel
      * Then add another.
      * In this case it remove the table component
      * and add a new component with a text that
-     * says No schedule found
+     * says No schedule found or Downloading schedules
+     * and channels
+     *
+     * @param hideCase which panel that is going to
+     *                 be shown instead of the JScrollpane
      *
      * */
-    public void tableHide(){
-        middlePanel.remove(tableScroller);
-        middlePanel.add(middlePanelNoTable);
+    public void tableHide(int hideCase){
+        if(tableScroller != null) {
+            middlePanel.remove(tableScroller);
+        }
+        if(hideCase == 0){
+            middlePanel.add(middlePanelLoading);
+        }else{
+            middlePanel.add(middlePanelNoTable);
+        }
         this.setIsTableVisible(false);
         middlePanel.revalidate();
         middlePanel.repaint();
@@ -437,12 +462,17 @@ public class RadioChartGui {
      * Remove a component from the middlePanel
      * Then add another.
      * In this case it remove the component which
-     * says No schedule found with a jtable as
-     * a JScrollpane
+     * says No schedule found or Downloading schedules and channels
+     * with a a JScrollpane.
      *
      * */
-    public void tableShow(){
-        middlePanel.remove(middlePanelNoTable);
+    public void tableShow(int hideCase){
+        if(hideCase == 0){
+            middlePanel.remove(middlePanelLoading);
+            this.initializeMenu();
+        }else{
+            middlePanel.remove(middlePanelNoTable);
+        }
         middlePanel.add(tableScroller);
         this.setIsTableVisible(true);
         middlePanel.revalidate();
@@ -478,17 +508,23 @@ public class RadioChartGui {
      *         a label and some design on the text, as well as a white
      *         background
      * */
-    public JPanel createMiddlePanelNoTable(){
+    public JPanel createMiddlePanelNoTable(String tableCase){
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.setBackground(Color.white);
-        JLabel label = new JLabel("No schedule found");
+        JLabel label = null;
+        if(tableCase == "noschedule") {
+            label = new JLabel("No schedule found");
+        }else if(tableCase == "loading"){
+            label = new JLabel("Downloading schedules and channels");
+        }else{
+            label = new JLabel(" ");
+        }
         label.setFont(new Font("Boulder", Font.PLAIN, 20));
         label.setHorizontalAlignment(JLabel.CENTER);
         panel.add(label);
         return panel;
     }
-
     /**
      * Class which change color on the table cell based on
      * the current state of each program/cell.
@@ -558,6 +594,7 @@ public class RadioChartGui {
             try {
                 radioObjects.setObjects(get());
                 updateTable(radioObjects.getCurrentChannel());
+                radioObjects.getGui().tableShow(0);
             } catch (ExecutionException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {

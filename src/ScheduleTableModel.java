@@ -33,7 +33,6 @@ public class ScheduleTableModel extends AbstractTableModel{
      * */
     public ScheduleTableModel(List<?> radioObjects){
         this.radioObjects = radioObjects;
-        System.out.println(radioObjects.size());
         columns = new String[]{
                 "Title",
                 "Start/endtime",

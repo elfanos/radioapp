@@ -27,13 +27,15 @@ public class ScheduleTable extends JTable {
     public ScheduleTable (RadioHandler radioHandler, RadioChartGui gui){
         this.gui = gui;
         this.radioHandler = radioHandler;
-        System.out.println("hello in table");
-        if(radioHandler.objects().size() != 0) {
-            this.setModelForTable();
+        if(radioHandler.objects() != null) {
+            if (radioHandler.objects().size() != 0) {
+                this.setModelForTable();
+            } else {
+                this.radioHandler.setTableInitalized(false);
+                this.gui.throwErrorToUser();
+            }
         }else{
-            System.out.println("allah");
-            this.radioHandler.setTableInitalized(false);
-            this.gui.throwErrorToUser();
+            radioHandler.getGui().tableHide(0);
         }
     }
     /**

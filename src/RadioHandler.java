@@ -35,18 +35,6 @@ public final class  RadioHandler implements Runnable{
     }
 
     /**
-     * Begin the current thread, for updating
-     * data from the radio API.
-     * */
-    public void start(){
-        running = true;
-        if (thread == null) {
-            thread = new Thread(this);
-            thread.start();
-        }
-    }
-
-    /**
      * Runs the thread
      * wait 60 minutes before the
      * list of objects updates.
