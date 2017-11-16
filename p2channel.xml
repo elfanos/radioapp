@@ -1,0 +1,148 @@
+<sr>
+    <copyright>
+        Copyright Sveriges Radio 2017. All rights reserved.
+    </copyright>
+    <pagination>
+        <page>1</page>
+        <size>10</size>
+        <totalhits>14</totalhits>
+        <totalpages>2</totalpages>
+        <nextpage>
+        </nextpage>
+    </pagination>
+    <schedule>
+        <scheduledepisode>
+            <episodeid>144535</episodeid>
+            <title>Notturno</title>
+            <description>Bjuder dig på unika liveinspelningar av känd och okänd musik från hela EBU. ”Euroradio Notturno” kallas samarbetet och det nattliga urvalet produceras av BBC i London.</description>
+            <starttimeutc>2017-04-14T22:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T04:00:00Z</endtimeutc>
+            <program id="2523" name="Notturno"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/2523/3144086_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>878989</episodeid>
+            <title>Klassisk morgon</title>
+            <description>Pernilla Eskilsdotter och Martin Ekeholm startar vardagen med harmonisk och lustfylld klassisk musik från barock till nutid, Kulturnytt och nyhetsuppdateringar. Efter 09.02 är det du som bestämmer den klassiska musiken.</description>
+            <starttimeutc>2017-04-15T04:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T07:00:00Z</endtimeutc>
+            <program id="4425" name="Klassisk morgon "/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep2.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4425/f9afe543-08d0-418a-a4fa-0078515f1907.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>876070</episodeid>
+            <title>Ekonyheter</title>
+            <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+            <starttimeutc>2017-04-15T07:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T07:03:00Z</endtimeutc>
+            <program id="4540" name="Ekot"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>878990</episodeid>
+            <title>Lördagsmorgon</title>
+            <subtitle>i P2</subtitle>
+            <description>En lugn och harmonisk inledning av helgen med tre timmar god musik. Klassiskt, folkmusik och jazz varvas med funderingar hämtade ur litteratur och kulturhistoria. Som stjärnors ljus skickas toner och tankar ur det förgångna rakt in i framtiden.</description>
+            <starttimeutc>2017-04-15T07:03:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T10:00:00Z</endtimeutc>
+            <program id="4429" name="Lördagsmorgon i P2"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4429/018337c6-6264-402b-acee-b164495fd0e2.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>876075</episodeid>
+            <title>Ekonyheter</title>
+            <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+            <starttimeutc>2017-04-15T10:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T10:03:00Z</endtimeutc>
+            <program id="4540" name="Ekot"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>878991</episodeid>
+            <title>P2 Dokumentär</title>
+            <subtitle>: Kampen om en exilorkester</subtitle>
+            <description>Dokumentärer med fokus på människor bakom musiken.</description>
+            <starttimeutc>2017-04-15T10:03:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T11:00:00Z</endtimeutc>
+            <program id="4112" name="P2 Dokumentär"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/478/acc138c9-4271-46d6-95ac-831344d6466b.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>885317</episodeid>
+            <title>UR</title>
+            <subtitle>: Nouvelles en français</subtitle>
+            <description>Klicka här för att se dagens tablå för utbildningsprogrammen från UR.</description>
+            <starttimeutc>2017-04-15T11:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T12:00:00Z</endtimeutc>
+            <program id="0"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/content/img/channellogos/sverigesradiologga.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>880801</episodeid>
+            <title>Sisu-uutiset</title>
+            <description>Sveriges Radio Sisuradio tarjoaa ohjelmaa laidasta laitaan Ruotsin suomenkieliselle ja meänkieliselle väestölle. / Sveriges Radio Sisuradio gör program för, av och med folk med anknytning och intresse för finska och meänkieli i Sverige.</description>
+            <starttimeutc>2017-04-15T12:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T12:04:00Z</endtimeutc>
+            <program id="185" name="Sisuradio"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/185/3633869_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>888919</episodeid>
+            <title>Sisutarinat</title>
+            <description>Kerrotaan ja kuunnellaan kuuntelijoiden tarinoita!</description>
+            <starttimeutc>2017-04-15T12:04:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T13:00:00Z</endtimeutc>
+            <program id="4406" name="Sisutarinat"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4406/adad7ecf-840d-4c9e-8059-93bdffd75360.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>878992</episodeid>
+            <title>Klingan</title>
+            <description>Världens musik i alla dess former med sköna beats, häftiga melodier och sjungen poesi.</description>
+            <starttimeutc>2017-04-15T13:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T16:00:00Z</endtimeutc>
+            <program id="4433" name="Klingan"/>
+            <channel id="163" name="P2"/>
+            <imageurl>images/p2ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4433/937e9a51-aa58-4464-b158-eccd02458b42.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+    </schedule>
+</sr>

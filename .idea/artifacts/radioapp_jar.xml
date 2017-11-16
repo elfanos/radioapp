@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="radioapp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/radioapp_jar</output-path>
+    <root id="archive" name="OU2-radio-appjava.jar">
+      <element id="module-output" name="OU2-radio-appjava" />
+    </root>
+  </artifact>
+</component>

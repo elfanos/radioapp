@@ -1,0 +1,144 @@
+<sr>
+    <copyright>
+        Copyright Sveriges Radio 2017. All rights reserved.
+    </copyright>
+    <pagination>
+        <page>1</page>
+        <size>10</size>
+        <totalhits>70</totalhits>
+        <totalpages>7</totalpages>
+        <nextpage>
+        </nextpage>
+    </pagination>
+    <schedule>
+        <scheduledepisode>
+            <episodeid>81322</episodeid>
+            <title>Ekonyheter</title>
+            <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+            <starttimeutc>2017-04-17T22:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-19T22:02:05Z</endtimeutc>
+            <program id="4540" name="Ekot"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>873750</episodeid>
+            <title>Söndagsintervjun</title>
+            <description>Möt personen bakom offentlighetens mask i journalistikens allra mest grundläggande form – intervjun.</description>
+            <starttimeutc>2017-04-14T22:02:05Z</starttimeutc>
+            <endtimeutc>2017-04-14T22:48:00Z</endtimeutc>
+            <program id="4772" name="Söndagsintervjun"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep2.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4772/7b8e02b8-851a-47d6-9883-5af5ed9c06ef.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <title>OBS</title>
+            <description/>
+            <starttimeutc>2017-04-14T22:48:00Z</starttimeutc>
+            <endtimeutc>2017-04-14T23:00:00Z</endtimeutc>
+            <program id="503" name="OBS"/>
+            <channel id="132" name="P1"/>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>876060</episodeid>
+            <title>Ekonyheter</title>
+            <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+            <starttimeutc>2017-04-14T23:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-14T23:02:05Z</endtimeutc>
+            <program id="4540" name="Ekot"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>875699</episodeid>
+            <title>Radiopsykologen</title>
+            <description>Psykoterapeuten Allan Linnér möter lyssnare i ett terapeutiskt samtal.</description>
+            <starttimeutc>2017-04-14T23:02:05Z</starttimeutc>
+            <endtimeutc>2017-04-14T23:35:00Z</endtimeutc>
+            <program id="3637" name="Radiopsykologen"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/3637/87e6235d-721c-48af-9eb6-6faff307b9cc.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>875559</episodeid>
+            <title>Odla</title>
+            <subtitle>med P1</subtitle>
+            <description>För dig som är fritidsodlare och som vill gräva lite djupare i kompost och rabatter för att lära dig mer om odling. Här får du experttips, goda råd och en inblick i odlandets olika trender och möjligheter.</description>
+            <starttimeutc>2017-04-14T23:35:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T00:00:00Z</endtimeutc>
+            <program id="1667" name="Odla med P1"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/1667/6104e5d7-3056-4bd0-8483-8c4d8fe85f42.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>876061</episodeid>
+            <title>Ekonyheter</title>
+            <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+            <starttimeutc>2017-04-15T00:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T00:02:05Z</endtimeutc>
+            <program id="4540" name="Ekot"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>875698</episodeid>
+            <title>Meny med Tomas Tengby</title>
+            <description>
+                Sveriges Radios matprogram som tittar djupt i grytorna.
+            </description>
+            <starttimeutc>2017-04-15T00:02:05Z</starttimeutc>
+            <endtimeutc>2017-04-15T00:33:00Z</endtimeutc>
+            <program id="950" name="Meny "/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/950/ccaa2a24-d033-472a-a10e-ac224ecbeefe.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>761169</episodeid>
+            <title>Funk i P1</title>
+            <subtitle>: Vägrade rehab - blev kroppens filosof</subtitle>
+            <description>Programmet som visar hur samhället funkar om du har någon form av funktionsvariation.</description>
+            <starttimeutc>2017-04-15T00:33:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T01:00:00Z</endtimeutc>
+            <program id="4970" name="Funk i P1 "/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/1191/577e5dce-99a4-41a3-bdbd-27eb54cc2a4b.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+        <scheduledepisode>
+            <episodeid>876062</episodeid>
+            <title>Ekonyheter</title>
+            <description>Här hör du Ekots nyhetssändningar. Senaste nytt - dygnet runt, året om.</description>
+            <starttimeutc>2017-04-15T01:00:00Z</starttimeutc>
+            <endtimeutc>2017-04-15T01:02:05Z</endtimeutc>
+            <program id="4540" name="Ekot"/>
+            <channel id="132" name="P1"/>
+            <imageurl>images/p1ep1.jpg</imageurl>
+            <imageurltemplate>
+                http://static-cdn.sr.se/sida/images/4540/3634468_2048_1152.jpg
+            </imageurltemplate>
+        </scheduledepisode>
+    </schedule>
+</sr>
