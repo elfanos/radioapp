@@ -35,8 +35,10 @@ public class RadioChartGui {
     private JPanel middlePanelNoTable;
     private JPanel middlePanelLoading;
     private JPanel jtablePanel;
+    private JPanel jLowerPanel;
     private boolean isTableVisible;
     private JScrollPane tableScroller;
+    private boolean firstLoad = true;
 
     /**
      * Constructor for the radioChartGui
@@ -50,7 +52,9 @@ public class RadioChartGui {
         this.radioObjects = radioObjects;
         this.radioObjects.setGui(this);
         setFirstElement(true);
-
+        jLowerPanel  = lowerPanel();
+        this.addRefreshButton();
+        refreshButton.setEnabled(false);
         middlePanel = buildMiddlePanel();
         middlePanelNoTable =
                 this.createMiddlePanelNoTable("noschedule");
@@ -72,9 +76,8 @@ public class RadioChartGui {
         tableScroller = new JScrollPane(table);
         middlePanel.add(tableScroller);
        // middlePanel.add(middlePanelNoTable,BorderLayout.CENTER);
-        JPanel lowerPanel  = lowerPanel();
         frame.add(middlePanel,BorderLayout.CENTER);
-        frame.add(lowerPanel, BorderLayout.SOUTH);
+        frame.add(jLowerPanel, BorderLayout.SOUTH);
         frame.setBackground(Color.decode("#2D3142"));
         frame.pack();
         frame.setSize(600, 600);
@@ -97,23 +100,33 @@ public class RadioChartGui {
     }
 
     /**
-     * Panel which contains the refresh button
-     * it updates the radioObjects on click.
+     * Structure the lowerpanel with
+     * a new flowlayout. And create a new
+     * JPanel
      *
      * @return JPanel with data
      * */
     private JPanel lowerPanel(){
         JPanel lowerPanel = new JPanel();
         lowerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+        return lowerPanel;
+    }
+
+    /**
+     * Add the refresh button to
+     * the lowerpanel in the gui
+     * Refresh update the radioOjbect on click.
+     * */
+    private void addRefreshButton(){
         refreshButton = new JButton("Refresh");
         refreshButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 (new SWTableUpdate()).execute();
+                refreshButton.setEnabled(false);
             }
         });
-        lowerPanel.add(refreshButton);
-        return lowerPanel;
+        jLowerPanel.add(refreshButton);
     }
 
     /**
@@ -470,6 +483,7 @@ public class RadioChartGui {
         if(hideCase == 0){
             middlePanel.remove(middlePanelLoading);
             this.initializeMenu();
+            firstLoad = false;
         }else{
             middlePanel.remove(middlePanelNoTable);
         }
@@ -588,13 +602,19 @@ public class RadioChartGui {
         /**
          * When doInBackground is done, done updates
          * the table with the new values.
+         * Show the table with the new values
+         * retrieved from the radio API.
+         * Set the refreshbutton to enable.
          */
         @Override
         protected void done() {
             try {
                 radioObjects.setObjects(get());
                 updateTable(radioObjects.getCurrentChannel());
-                radioObjects.getGui().tableShow(0);
+                if(firstLoad) {
+                    radioObjects.getGui().tableShow(0);
+                }
+                refreshButton.setEnabled(true);
             } catch (ExecutionException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {
